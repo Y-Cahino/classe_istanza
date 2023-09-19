@@ -17,8 +17,8 @@ namespace classe_istanza
         }
         public Prodotto(string n,double pr)
         {
-            nome = n;
-            prezzo = pr;
+            setnome(n);
+            setprezzo(pr);
         }
         //metodo accessor
         public string getnome()
@@ -31,7 +31,10 @@ namespace classe_istanza
         }
         public void setprezzo(double pr)
         {
-            prezzo = pr;
+            if (pr > 0)
+            {
+                prezzo = pr;
+            }
         }
         public void setnome(string n)
         {

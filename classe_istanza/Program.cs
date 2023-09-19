@@ -11,12 +11,20 @@ namespace classe_istanza
     { 
         static void Main(string[] args)
         {
+            string n,n2;
+            double pr,pr2;
             Random random= new Random();
             //istanzia gli oggetti
-            Prodotto p1 = new Prodotto("p1",random.Next(1,99));
-            Prodotto p2 = new Prodotto("p2", random.Next(1, 99));
+            Console.WriteLine("Inserisci nomi:");
+            n= Console.ReadLine();
+            n2 = Console.ReadLine();
+            Console.WriteLine("Inserisci prezzi:");
+            pr=Convert.ToInt32(Console.ReadLine());
+            pr2 = Convert.ToInt32(Console.ReadLine());
+            Prodotto p1 = new Prodotto(n,pr);
+            Prodotto p2 = new Prodotto(n2,pr2);
             Console.WriteLine("p1:\nNome: " + p1.getnome() + "\nPrezzo: " + p1.getprezzo());
-            Console.WriteLine("p2:\nNome: " + p2.getnome() + "\nPrezzo: " + p2.getprezzo());
+            Console.WriteLine("p2:\nNome: " + p2.getnome() + "\nPrezzo: {0} €" + p2.getprezzo());
         }
     }
 }
