@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace classe_istanza
 {
-    internal class Class1
+    public class Prodotto
     {
+        private string nome;
+        private double prezzo;
+        public Prodotto(string nome, double prezzo)
+        {
+            this.nome = nome;
+            this.prezzo = prezzo;
+        }
+        public string getnome()
+        {
+            return nome;
+        }
+        public double getprezzo()
+        {
+            return prezzo;
+        }
     }
 }
