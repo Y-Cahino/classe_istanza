@@ -10,10 +10,15 @@ namespace classe_istanza
     {
         private string nome;
         private double prezzo;
-        public Prodotto(string nome, double prezzo)
+        public Prodotto()
         {
-            this.nome = nome;
-            this.prezzo = prezzo;
+            nome = "";
+            prezzo = 0.0;
+        }
+        public Prodotto(string n,double pr)
+        {
+            nome = n;
+            prezzo = pr;
         }
         //metodo accessor
         public string getnome()
@@ -26,7 +31,7 @@ namespace classe_istanza
         }
         public void setprezzo(double pr)
         {
-            prezzo= pr;
+            prezzo = pr;
         }
         public void setnome(string n)
         {
