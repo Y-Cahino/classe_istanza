@@ -15,6 +15,7 @@ namespace classe_istanza
             this.nome = nome;
             this.prezzo = prezzo;
         }
+        //metodo accessor
         public string getnome()
         {
             return nome;
@@ -22,6 +23,10 @@ namespace classe_istanza
         public double getprezzo()
         {
             return prezzo;
+        }
+        public void setprezzo(double pr)
+        {
+            prezzo= pr;
         }
     }
 }
