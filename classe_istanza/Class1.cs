@@ -28,5 +28,9 @@ namespace classe_istanza
         {
             prezzo= pr;
         }
+        public void setnome(string n)
+        {
+            nome = n;
+        }
     }
 }
